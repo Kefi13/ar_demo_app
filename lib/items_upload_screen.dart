@@ -188,8 +188,71 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
     );
   }
 
+  // default screen
+
+  Widget defaultScreen() {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      appBar: AppBar(
+        title: const Text(
+          "Upload new Items",
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(
+              Icons.add_photo_alternate,
+              color: Colors.white,
+              size: 200,
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  showDialogueBox();
+                },
+                child: const Text(
+                  "Add new Item ",
+                  style: TextStyle(color: Colors.white),
+                ))
+          ],
+        ),
+      ),
+    );
+  }
+
+  showDialogueBox() {
+    return showDialog(
+        context: context,
+        builder: (c) {
+          return SimpleDialog(
+            backgroundColor: Colors.white,
+            title: const Text(
+              "Item image ",
+            ),
+            children: [
+              SimpleDialogOption(
+                onPressed: () {},
+                child: const Text("Capture image with Camera "),
+              ),
+              SimpleDialogOption(
+                onPressed: () {},
+                child: const Text("Upload from Gallery  "),
+              ),
+              SimpleDialogOption(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text("Cancel  "),
+              )
+            ],
+          );
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return uploadFormScreen();
+    return defaultScreen();
   }
 }
