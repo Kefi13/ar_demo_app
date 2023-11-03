@@ -1,3 +1,4 @@
+import 'package:ar_demo_app/items_upload_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -15,7 +16,10 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text("AR_DEMO"),
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (c) => ItemsUploadScreen()));
+              },
               icon: Icon(
                 Icons.add,
                 color: Colors.amber,
