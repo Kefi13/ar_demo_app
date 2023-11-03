@@ -13,7 +13,14 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("AR_DEMO"),
-        backgroundColor: Colors.amber,
+        actions: [
+          IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.add,
+                color: Colors.amber,
+              ))
+        ],
       ),
     );
   }
