@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "389236196400",
+    "project_id": "ar-smartxr-demo",
+    "storage_bucket": "ar-smartxr-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389236196400:android:1dbecd4d85fd34265219f5",
+        "android_client_info": {
+          "package_name": "com.example.ar_demo_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPEl6_cmg-vLEgJwC3peXDBCqtBPsoNSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
